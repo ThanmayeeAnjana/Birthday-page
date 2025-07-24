@@ -67,6 +67,9 @@
   0% { transform: translateY(0); opacity: 1; }
   100% { transform: translateY(-120vh); opacity: 0; }
 }
+    html {
+  scroll-behavior: smooth;
+}
     body {
       margin: 0;
       padding: 0;
@@ -78,6 +81,8 @@
       justify-content: center;
       font-family: 'Segoe UI', sans-serif;
       color: #6a1b4d;
+      overflow-y: auto;
+      overflow-x: hidden;
     }
     .cake {
       position: relative;
@@ -191,7 +196,7 @@
   left: 0;
   pointer-events: none;
   z-index: 10;
-}
+    }
   </style>
 </head>
 <body>
@@ -372,5 +377,6 @@ function startFireworksBursting() {
   <div class="heart"></div>
   <div class="star"></div>
 </div>
+<div style="height: 1500px;"></div>
 </body>
 </html>
